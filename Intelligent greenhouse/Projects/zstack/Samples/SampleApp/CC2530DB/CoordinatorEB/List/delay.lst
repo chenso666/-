@@ -1,0 +1,256 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         06/Apr/2025  22:59:20 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\delay. #
+#                          c                                                  #
+#    Command line       =  -f C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷ #
+#                          ‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          ..\..\Tools\CC2530DB\f8wCoord.cfg (-DCPU32MHZ      #
+#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
+#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
+#                          -f C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷ #
+#                          ‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          ..\..\Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO    #
+#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0x0085                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\24631\Desktop\π§≥Ã #
+#                          ‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠\Projects\zstack\Samples\Sa #
+#                          mpleApp\CC2530DB\delay.c -D ZTOOL_P1 -D xMT_TASK   #
+#                          -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                 #
+#                          xLCD_SUPPORTED=DEBUG -lC                           #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\Coordi #
+#                          natorEB\List\ -lA C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_ #
+#                          ÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠\Projects\zstack\Samples\SampleA #
+#                          pp\CC2530DB\CoordinatorEB\List\ --diag_suppress    #
+#                          Pe001,Pa010 -o C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø #
+#                          ≠\π§≥Ã‘¥¬Î_÷‹ø≠\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\CoordinatorEB\Obj\ -e --no_code_motion    #
+#                          --debug --core=plain --dptr=16,1                   #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷ #
+#                          ‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\    #
+#                          -I C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷ #
+#                          ‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          Source\ -I C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§ #
+#                          ≥Ã‘¥¬Î_÷‹ø≠\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\ZMain\TI2530DB\ -I                   #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\hal\include\ -I                #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\hal\target\CC2530EB\ -I        #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\include\ -I                #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\high_level\ -I             #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\low_level\srf04\ -I        #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\mac\low_level\srf04\single_chi #
+#                          p\ -I C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬ #
+#                          Î_÷‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\ #
+#                          ..\..\..\..\..\Components\mt\ -I                   #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\osal\include\ -I               #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\services\saddr\ -I             #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\services\sdata\ -I             #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\af\ -I                   #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\nwk\ -I                  #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\sapi\ -I                 #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\sec\ -I                  #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\sys\ -I                  #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\stack\zdo\ -I                  #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\zmac\ -I                       #
+#                          C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\..\..\ #
+#                          ..\..\..\Components\zmac\f8w\ -Ohz                 #
+#                          --require_prototypes                               #
+#    List file          =  C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\Coordi #
+#                          natorEB\List\delay.lst                             #
+#    Object file        =  C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠ #
+#                          \Projects\zstack\Samples\SampleApp\CC2530DB\Coordi #
+#                          natorEB\Obj\delay.r51                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\24631\Desktop\π§≥Ã‘¥¬Î_÷‹ø≠\π§≥Ã‘¥¬Î_÷‹ø≠\Projects\zstack\Samples\SampleApp\CC2530DB\delay.c
+      1          #include "delay.h"
+      2          #include "hal_timer.h"  // »Áπ˚ƒ„ π”√ HAL µƒ∂® ±∆˜£¨ø…“‘∞¸∫¨’‚∏ˆ£¨∑Ò‘Ú≤ª–Ë“™
+      3          
+      4          // ºÚµ•µƒusº∂—” ±£¨ª˘”⁄for—≠ª∑£¨CC2530¥Û∏≈1∏ˆ—≠ª∑1us£®–Ë∏˘æ›±‡“Î”≈ªØµ˜’˚£©
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+      5          void Delay_us(uint16 us)
+   \                     Delay_us:
+      6          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+      7              uint16 i;
+      8              while (us--)
+   \                     ??Delay_us_0:
+   \   000000   EA           MOV     A,R2
+   \   000001   F8           MOV     R0,A
+   \   000002   EB           MOV     A,R3
+   \   000003   F9           MOV     R1,A
+   \   000004   E8           MOV     A,R0
+   \   000005   24FF         ADD     A,#-0x1
+   \   000007   1A           DEC     R2
+   \   000008   E9           MOV     A,R1
+   \   000009   34FF         ADDC    A,#-0x1
+   \   00000B   FB           MOV     R3,A
+   \   00000C   E8           MOV     A,R0
+   \   00000D   49           ORL     A,R1
+   \   00000E   6008         JZ      ??Delay_us_1
+      9              {
+     10                  for (i = 0; i < 4; i++)  // ’‚¿Ôµƒ÷µø…“‘∏˘æ› µº ÀŸ∂»µ˜Ω⁄
+   \   000010   7404         MOV     A,#0x4
+     11                  {
+     12                      asm("NOP");  // ø’≤Ÿ◊˜÷∏¡Ó£¨»∑±£—” ±∏¸æ´»∑
+   \                     ??Delay_us_2:
+   \   000012   00           NOP
+     13                  }
+   \   000013   14           DEC     A
+   \   000014   60EA         JZ      ??Delay_us_0
+   \   000016   80FA         SJMP    ??Delay_us_2
+     14              }
+     15          }
+   \                     ??Delay_us_1:
+   \   000018   02....       LJMP    ?BRET
+     16          
+     17          // msº∂—” ±
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     18          void Delay_ms(uint16 ms)
+   \                     Delay_ms:
+     19          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   EA           MOV     A,R2
+   \   000006   FE           MOV     R6,A
+   \   000007   EB           MOV     A,R3
+   \   000008   FF           MOV     R7,A
+   \   000009   8007         SJMP    ??Delay_ms_0
+     20              while (ms--)
+     21              {
+     22                  Delay_us(1000);
+   \                     ??Delay_ms_1:
+   \   00000B                ; Setup parameters for call to function Delay_us
+   \   00000B   7AE8         MOV     R2,#-0x18
+   \   00000D   7B03         MOV     R3,#0x3
+   \   00000F   12....       LCALL   ??Delay_us?relay
+     23              }
+   \                     ??Delay_ms_0:
+   \   000012   EE           MOV     A,R6
+   \   000013   F8           MOV     R0,A
+   \   000014   EF           MOV     A,R7
+   \   000015   F9           MOV     R1,A
+   \   000016   E8           MOV     A,R0
+   \   000017   24FF         ADD     A,#-0x1
+   \   000019   1E           DEC     R6
+   \   00001A   E9           MOV     A,R1
+   \   00001B   34FF         ADDC    A,#-0x1
+   \   00001D   FF           MOV     R7,A
+   \   00001E   E8           MOV     A,R0
+   \   00001F   49           ORL     A,R1
+   \   000020   70E9         JNZ     ??Delay_ms_1
+     24          }
+   \   000022   7F01         MOV     R7,#0x1
+   \   000024   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??Delay_us?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    Delay_us
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??Delay_ms?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    Delay_ms
+
+   Maximum stack usage in bytes:
+
+     Function      ISTACK PSTACK XSTACK
+     --------      ------ ------ ------
+     Delay_ms          0      0      9
+       -> Delay_us     0      0     18
+     Delay_us          0      0      9
+
+
+   Segment part sizes:
+
+     Function/Label   Bytes
+     --------------   -----
+     Delay_us           27
+     Delay_ms           39
+     ??Delay_us?relay    6
+     ??Delay_ms?relay    6
+
+ 
+ 66 bytes in segment BANKED_CODE
+ 12 bytes in segment BANK_RELAYS
+ 
+ 78 bytes of CODE memory
+
+Errors: none
+Warnings: none

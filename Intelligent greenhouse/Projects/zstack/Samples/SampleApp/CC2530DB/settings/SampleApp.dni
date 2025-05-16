@@ -1,0 +1,41 @@
+[DebugChecksum]
+Checksum=1004802275
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Count=0
+[ChipconEmu]
+Stop timers on halt=0
+Leave target running=1
+[Aliases]
+A0=_ "C:\Users\24631\Desktop\工程源码_周凯\工程源码_周凯\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A1=_ "C:\Users\win10_1\Desktop\实验四 无线通信\实验四 无线通信\实验三 串口机制\ZStack-CC2530-2.5.1a\Components\mac\low_level\srf04\single_chip\mac_mcu.c" ""
+A2=_ "C:\Users\win10_1\Desktop\实验四 无线通信\实验四 无线通信\实验三 串口机制\ZStack-CC2530-2.5.1a\Components\osal\common\OSAL_Memory.c" ""
+A3=_ "C:\Users\win10_1\Desktop\实验四 无线通信\实验四 无线通信\实验三 串口机制\ZStack-CC2530-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A4=_ "C:\Users\周凯\Desktop\202206100085_周凯 zigbee\工程源码_周凯\Components\osal\common\OSAL_Memory.c" ""
+A5=_ "C:\Users\周凯\Desktop\202206100085_周凯 zigbee\工程源码_周凯\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A6=_ "E:\Z-Stack\ZStack-CC2530-2.5.1a\Components\osal\common\OSAL_Memory.c" ""
+Count=7
+SuppressDialog=1
