@@ -443,8 +443,8 @@ void SampleApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )
       HalUARTWrite(0, pkt->cmd.Data,pkt->cmd.DataLength);
       HalUARTWrite(0,"\n",1 );
       if(temp >= 28.0f){
+                 //驱动风扇
                  P0SEL &= ~0x30;  // 清空位4和位5
-   
                  P0DIR |= 0x30;   // 设置为输出模式
                  P0_5=1;
                  P0_4=0;
